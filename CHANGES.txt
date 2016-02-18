@@ -1,0 +1,78 @@
+0.1.3
+------
+
+ - pypi monthly downloads image added to readme
+
+0.1.2
+------
+
+ - travis-ci status image added to readme
+
+0.1.1
+------
+
+ - python 2.x and 3.x support
+ - program header and description updated
+ - .travis.yml and requirements.txt added
+
+0.1.0
+------
+
+ - updated program description
+
+0.0.11
+------
+
+ - updated setup.py classifiers
+
+0.0.10
+------
+
+ - reformatting to conform with PEP 8
+ - added shebang
+
+0.0.9
+------
+
+ - updated some formatting and changed % to format()
+
+0.0.8
+------
+
+ - Updated program description
+
+0.0.7
+------
+
+ - Moved the check for straggler emails to auto_download rather than check_email
+
+0.0.6
+------
+
+ - Firefox webdriver no longer asks before downloading .zip
+ - Minor fix to download_link behavior
+
+0.0.5
+------
+
+ - Added randomized user agent for requests and selenium drivers
+
+0.0.4
+------
+
+ - Removed sys import
+
+0.0.3
+------
+
+ - Made 0 or 1 positional arguments
+
+0.0.2
+------
+
+ - Changed execution command to bandcamp-get
+
+0.0.1
+------
+
+ - First entry
