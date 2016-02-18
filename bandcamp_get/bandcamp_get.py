@@ -16,6 +16,7 @@ import json
 from pprint import pprint
 
 import os
+import getpass
 
 import lxml.html as lh
 import requests
@@ -51,7 +52,7 @@ def get_parser():
                          help='use your own email instead of a throwaway')
     parser.add_argument('-v', '--version', help='display current version',
                         action='store_true')
-    parser.add_argument('-f', '--folder', help='choose folder to download (absolute path) (default: /Downloads)')
+    parser.add_argument('-f', '--folder', type=str, help='choose folder to download (absolute path) (default: /home/$user/Downloads)')
     parser.add_argument('-js', '--json_file', help='load a list of artists from json folder (replace USER with path to file)',
                         action='store_true')
     return parser
@@ -121,7 +122,7 @@ def get_album_links(args):
 
 def auto_download(args):
 
-    print ('opening gurerilla window')
+    print ('opening guerrilla window')
 
     e_driver = get_driver(args['browser'], args['folder'], args['display']) # Email driver
     e_driver.implicitly_wait(1)
@@ -447,9 +448,12 @@ def command_line_runner():
         args['display'] = 0
 
     if not args['folder']:
-        args['folder'] = "/Downloads/" + args['user']
+        args['folder'] = "/home/" + getpass.getuser() + "/Downloads/" + args['user']
     else:
         args['folder'] = args['folder'] + '/' + args['user']
+
+
+    print('folder: {}', args['folder'])
 
     args['zip_code'] = random.randint(10000, 99999)
     
