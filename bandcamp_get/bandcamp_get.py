@@ -447,7 +447,7 @@ def command_line_runner():
         args['display'] = 0
 
     if not args['folder']:
-        args['folder'] = "/home/rofler/D/Music/samples/zzz bc-get/" + args['user']
+        args['folder'] = "/Downloads/" + args['user']
     else:
         args['folder'] = args['folder'] + '/' + args['user']
 
