@@ -3,7 +3,8 @@
 #############################################################
 #                                                           #
 # bandcamp-get - automated music downloading via selenium   #
-# written by Hunter Hammond (huntrar@gmail.com)             #
+# original written by Hunter Hammond (huntrar@gmail.com)    #
+#current version: Ricardo Silva (github.com/Ricardo-Silva91)#                                       #
 #                                                           #
 #############################################################
 
