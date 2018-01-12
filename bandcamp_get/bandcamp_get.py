@@ -313,7 +313,7 @@ def download_link(args, driver, link):
         print('passed without email')
 
     except Exception:
-        print('fuck without email')
+        print('Exception: without email')
         pass
 
     try:
@@ -325,7 +325,7 @@ def download_link(args, driver, link):
         element.send_keys(args['zip_code'])
         element.send_keys(Keys.RETURN)
     except Exception:
-        print('fuck up on email')
+        print('Exception on email')
         pass
 
     try:
@@ -359,7 +359,7 @@ def download_link(args, driver, link):
 
         time.sleep(1)
     except Exception:
-        print('fuck up on {}'.format(link))
+        print('Exception on {}'.format(link))
         # input("Press Enter to continue...")
         pass
 
